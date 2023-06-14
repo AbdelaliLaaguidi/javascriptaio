@@ -61,3 +61,13 @@ function book(name, author) {
 
 const myBook = new book("Software Engineering", "Abdelali LAAGUIDI");
 console.log(myBook);
+
+class Book {
+  constructor(name, author) {
+    this.name = name;
+    this.author = author;
+  }
+}
+
+const classMyBook = new Book("Software Engineering", "Abdelali LAAGUIDI");
+console.log(classMyBook);
