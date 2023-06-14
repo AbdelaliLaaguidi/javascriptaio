@@ -26,3 +26,11 @@ do {
 document.getElementById(
   "divMsg3"
 ).innerHTML = `<h2>I found it:</h2><br><p>It tooks me only ${guessAttempts} attempts to find the secret number "${numberToGuess}"</p>`;
+
+const phoneNumber = "+342-63478-2652";
+let number = "";
+for (let digit of phoneNumber) {
+  if (digit === "+" || digit === "-") continue;
+  number = number.concat(digit);
+}
+console.log(number);
