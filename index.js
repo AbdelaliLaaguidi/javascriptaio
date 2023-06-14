@@ -53,3 +53,11 @@ const ayNames = names.filter(
   (name) => name.startsWith("A") || name.startsWith("Y")
 );
 console.log(ayNames);
+
+function book(name, author) {
+  this.name = name;
+  this.author = author;
+}
+
+const myBook = new book("Software Engineering", "Abdelali LAAGUIDI");
+console.log(myBook);
