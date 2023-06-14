@@ -40,3 +40,11 @@ const sum = numbers.reduce(
   (previousValue, currentValue) => previousValue + currentValue,
   0
 );
+
+const ingredients = ["egg", "Tomato", "Salt", "Pepper", "Oil"];
+const listIngredients = ingredients
+  .map((ingredient) => `<li>${ingredient}</li>`)
+  .join("<br>");
+document.getElementById(
+  "divMsg4"
+).innerHTML = `<h2>Ingredients:</h2>${listIngredients}`;
