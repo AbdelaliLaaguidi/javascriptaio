@@ -15,3 +15,16 @@ for (let name of names) {
   divMsg2 = `${divMsg2}<br><li>${name}</li>`;
   document.getElementById("divMsg2").innerHTML = divMsg2;
 }
+
+const numberToGuess = 45;
+let guessAttempts = 0;
+let guess;
+while (guess != numberToGuess) {
+  console.log(guess);
+  guess = Math.floor(Math.random() * 100);
+  ++guessAttempts;
+}
+console.log(guess);
+document.getElementById(
+  "divMsg3"
+).innerHTML = `<h2>I found it:</h2><br><p>It tooks me only ${guessAttempts} attempts to find the secret number "${numberToGuess}"</p>`;
