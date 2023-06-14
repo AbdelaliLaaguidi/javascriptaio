@@ -48,3 +48,8 @@ const listIngredients = ingredients
 document.getElementById(
   "divMsg4"
 ).innerHTML = `<h2>Ingredients:</h2>${listIngredients}`;
+
+const ayNames = names.filter(
+  (name) => name.startsWith("A") || name.startsWith("Y")
+);
+console.log(ayNames);
