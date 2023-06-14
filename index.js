@@ -34,3 +34,9 @@ for (let digit of phoneNumber) {
   number = number.concat(digit);
 }
 console.log(number);
+
+const numbers = [19, 4, 5, 1, 18];
+const sum = numbers.reduce(
+  (previousValue, currentValue) => previousValue + currentValue,
+  0
+);
