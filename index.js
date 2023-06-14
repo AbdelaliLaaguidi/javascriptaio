@@ -71,3 +71,11 @@ class Book {
 
 const classMyBook = new Book("Software Engineering", "Abdelali LAAGUIDI");
 console.log(classMyBook);
+
+const bookDetails = {
+  name: "Software Engineering",
+  author: "Abdelali LAAGUIDI",
+};
+
+const objMyBook = Object.create(bookDetails);
+console.log(objMyBook);
