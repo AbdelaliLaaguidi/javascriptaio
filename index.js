@@ -19,12 +19,10 @@ for (let name of names) {
 const numberToGuess = 45;
 let guessAttempts = 0;
 let guess;
-while (guess != numberToGuess) {
-  console.log(guess);
+do {
   guess = Math.floor(Math.random() * 100);
   ++guessAttempts;
-}
-console.log(guess);
+} while (guess != numberToGuess);
 document.getElementById(
   "divMsg3"
 ).innerHTML = `<h2>I found it:</h2><br><p>It tooks me only ${guessAttempts} attempts to find the secret number "${numberToGuess}"</p>`;
